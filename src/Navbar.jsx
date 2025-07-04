@@ -4,8 +4,9 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="shadow-md" style={{ backgroundColor: "#a7f3d0" }}>
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+    <nav className="shadow-md backdrop-blur-2xl border border-white/20 bg-translucentBlue mt-2 mx-4" style={{ backgroundColor: "oklch(74.6% 0.16 232.661 / 0.6)", // transparent using alpha
+      borderRadius: "10rem 10rem", }}>
+      <div className="container mx-auto px-4 py-1 flex items-center justify-between">
         {/* Empty div to balance center alignment */}
         <div className="w-10"></div>
 
