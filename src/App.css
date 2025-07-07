@@ -1,8 +1,64 @@
-.name{
-  justify-content: center;
-  align-items: center;
 
+
+/* Wave emoji */
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
-.header{
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity, 1));
+@keyframes wave-animation {
+  0% { transform: rotate(0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate(0.0deg) }
+  100% { transform: rotate(0.0deg) }
 }
+
+/* Entry animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* App.css */
+.about-me-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.about-me-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* App.css */
+.my-loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 9999px;
+  background: linear-gradient(to right, #10b981, #3b82f6);
+  animation: pulseScale 1s infinite ease-in-out;
+}
+
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+
