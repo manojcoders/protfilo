@@ -8,7 +8,7 @@ const Layout = () => {
 
   useEffect(() => {
     //  Show preloader for exactly 10 seconds
-    const timer = setTimeout(() => setLoading(false), 1000); // 10,000ms = 10s
+    const timer = setTimeout(() => setLoading(false), 2000); // 10,000ms = 10s
     return () => clearTimeout(timer);
   }, []);
 

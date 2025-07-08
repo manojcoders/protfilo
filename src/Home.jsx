@@ -6,6 +6,8 @@ import { ArrowDownIcon } from '@heroicons/react/24/outline';
 import './App.css'; 
 import profileImage from './1711643214041.jpg';
 import profile from './profile.png';
+import AnimatedLine from './AnimatedLine';
+
 
 
 const Home = () => {
@@ -80,7 +82,7 @@ const [isVisible, setIsVisible] = useState(false);
   <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-10 shadow-xl">
     <h3 className="text-white text-md font-semibold mb-4">Skill Set</h3>
     <div className="flex flex-wrap gap-3">
-      {["HTML", "CSS", "Tailwind", "PHP", "ReactJS", "Node.js", "MongoDB", "MySQL", "Spfx"].map((skill) => (
+      {["HTML", "Tailwind",  "ReactJS", "Node.js", "MongoDB", "MySQL", "Spfx","PHP","CSS",].map((skill) => (
         <span
           key={skill}
           className="text-white text-xs md:text-sm px-4 py-1.5 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition"
@@ -122,6 +124,12 @@ const [isVisible, setIsVisible] = useState(false);
     </p>
     </div>
   </div>
+  
+  <AnimatedLine />
+  
+
+
+
 </section>
   );
 };
