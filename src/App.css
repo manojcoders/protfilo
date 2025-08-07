@@ -106,16 +106,16 @@ html {
   transform: rotateX(180deg);
 }
  
-@keyframes flip-animation {
+@keyframes flip-clean {
   0% {
     transform: rotateX(90deg);
     opacity: 0;
   }
-  40% {
+  30% {
     transform: rotateX(0deg);
     opacity: 1;
   }
-  60% {
+  70% {
     transform: rotateX(0deg);
     opacity: 1;
   }
@@ -125,12 +125,13 @@ html {
   }
 }
 
-.animate-flip {
-  animation: flip-animation 3s ease-in-out;
+.animate-flip-clean {
+  animation: flip-clean 2.7s ease-in-out;
   display: inline-block;
   transform-origin: center;
   will-change: transform, opacity;
 }
+
 /* App.css or index.css */
 /* Hide scrollbar by default */
 .group .scrollbar-hover::-webkit-scrollbar {

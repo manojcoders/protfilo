@@ -89,11 +89,11 @@ const Home = () => {
 
               {/* Left Column: Text */}
               <div className="flex-1 flex flex-col justify-center">
-                <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h1 className="text-2xl md:text-2xl font-bold text-white mb-4">
                   Hi, I’m{" "}
                   <span
                     key={index}
-                    className="inline-block bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent animate-flip  transition-all duration-1000"
+                    className="inline-block bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent animate-flip-clean  transition-all duration-1000"
                   >
                     {roles[index]}
                   </span>
@@ -115,11 +115,12 @@ const Home = () => {
 
 
                 <div className="flex-1 flex flex-row flex-wrap space-x-4 mt-4">
-                  <FaInstagram className="w-6 h-7 text-cyan-400" />
-                  <FaLinkedin className="w-6 h-7 text-cyan-400" />
-                  <FaGithubSquare className="w-6 h-7 text-cyan-400" />
-                  <HiOutlineMailOpen className="w-6 h-7 text-cyan-400 wave" />
-                  <MdPhoneMissed className="w-6 h-7 text-cyan-400" />
+                  <a href="https://www.instagram.com/im_manoj_06/" target="_blank" rel="noopener noreferrer"> <FaInstagram className="w-6 h-7 text-cyan-400" /></a>
+                  <a href="https://www.linkedin.com/in/kandhula-manoj-kumar/" target="_blank" rel="noopener noreferrer"><FaLinkedin className="w-6 h-7 text-cyan-400" /> </a>
+
+                  <a href="https://github.com/manojcoders" target="_blank" rel="noopener noreferrer"> <FaGithubSquare className="w-6 h-7 text-cyan-400" /></a>
+                  <a href="mailto:kandhulamanojkumar663@gmail.com" aria-label="Send Email" title="Send Email" className="inline-flex items-center"><HiOutlineMailOpen className="w-6 h-7 text-cyan-400 wave" /></a>
+                  <a href="tel:+91 9491779518"><MdPhoneMissed className="w-6 h-7 text-cyan-400" /></a>
                 </div>
 
               </div>
@@ -149,15 +150,24 @@ const Home = () => {
 
               {/* Buttons Row */}
               <div className="flex flex-wrap gap-4">
-                <button className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 backdrop-blur-md hover:bg-white/20 transition">
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 backdrop-blur-md hover:bg-white/20 transition"
+                >
                   View Resume
                   <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-cyan-400" />
-                </button>
+                </a>
 
-                <button className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 backdrop-blur-md hover:bg-white/20 transition">
+                <a
+                  href="/resume.pdf"
+                  download
+                  className="flex items-center gap-2 bg-white/10 text-white text-sm border border-white/20 rounded-full px-5 py-2 backdrop-blur-md hover:bg-white/20 transition"
+                >
                   Download Resume
-                  <ArrowDownIcon className="h-5 w-5 text-cyan-400" />
-                </button>
+                  <ArrowRightEndOnRectangleIcon className="h-5 w-5 text-cyan-400" />
+                </a>
               </div>
 
             </div>
