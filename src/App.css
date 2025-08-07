@@ -1,5 +1,7 @@
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* Wave emoji */
 .wave {
   animation-name: wave-animation;
@@ -70,10 +72,11 @@
 }
 
 .loader-dots span {
-  width: 10px;
+  width: 10px; 
   height: 10px;
-  background-color: white;
-  border-radius: 50%;
+  /* background-color: white; */
+  color:rgb(195, 243, 245);
+  /* border-radius: 50%; */
   animation: bounce 0.6s infinite ease-in-out;
 }
 
@@ -95,5 +98,64 @@
     opacity: 1;
   }
 }
+.perspective {
+  perspective: 800px;
+}
+
+.flip {
+  transform: rotateX(180deg);
+}
+ 
+@keyframes flip-animation {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  60% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
+.animate-flip {
+  animation: flip-animation 3s ease-in-out;
+  display: inline-block;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+/* App.css or index.css */
+/* Hide scrollbar by default */
+.group .scrollbar-hover::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Show thin scrollbar on hover */
+.group:hover .scrollbar-hover::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.group:hover .scrollbar-hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.group:hover .scrollbar-hover::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+
+
 
 
