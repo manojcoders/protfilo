@@ -152,9 +152,15 @@ html {
 .group:hover .scrollbar-hover::-webkit-scrollbar-track {
   background: transparent;
 }
+/* App.css */
+.scrollbar-thin::-webkit-scrollbar {
+  display: none;
+}
 
 
-
+body {
+  overflow-x: hidden;
+}
 
 
 
