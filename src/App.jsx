@@ -231,7 +231,7 @@ const Home = () => {
               {/* Timer Card */}
               <div className="w-full md:w-1/2 backdrop-blur-lg border border-gray-300 rounded-2xl shadow-xl p-6">
                 <h2 className="text-3xl font-bold mb-6 text-center text-white">🕓 Timer</h2>
-                <div className="flex gap-4 flex-wrap justify-center">
+                <div className="flex gap-4 flex-wrap justify-center font-serif">
                   <FlipCard value={hours} label="Hours" animate={hours !== prevHours} />
                   <FlipCard value={minutes} label="Minutes" animate={minutes !== prevMinutes} />
                   <FlipCard value={seconds} label="Seconds" animate={false} />
