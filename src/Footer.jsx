@@ -1,48 +1,66 @@
 import React from "react";
-import {
-  EnvelopeIcon,
-  PhoneIcon,
-} from "@heroicons/react/24/outline";
-import {
-  FaInstagram,
-  FaGithub,
-  FaTwitter,
-} from "react-icons/fa"; // You can use react-icons for other platforms
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import { FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+import { FaRegCircleUser } from "react-icons/fa6";
+import { MdOutlineContactMail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-between px-6 py-4 text-white max-h-screen" style={{ backgroundColor: "oklch(20.8% 0.042 265.755)" }}>
-      
-      {/* text */}
-      <div className="flext mx-20 items-center">
-        
+    <div
+      className="flex flex-col md:flex-row items-center justify-between px-6 py-6 text-white"
+      style={{ backgroundColor: "oklch(20.8% 0.042 265.755)" }}
+    >
+      {/* Left: Contact Details */}
+      <div className="flex flex-col items-start gap-3 mx-4">
+        <div className="flex items-center gap-2">
+          <MdOutlineContactMail className="w-4 h-4 text-cyan-400" />
+          <p className="text-lg font-semibold text-gray-300">Contact Details:</p>
+        </div>
+        <div className="flex items-center gap-2 mx-5">
+          <PhoneIcon className="w-4 h-4 text-cyan-400" />
+          <p className="text-gray-400 font-serif">+91 9491779518</p>
+        </div>
+        <div className="flex items-center gap-2 mx-5">
+          <MdOutlineMail className="w-4 h-4 text-cyan-400" />
+          <p className="text-gray-400 font-serif">kandhulamanojkumar663@gmail.com</p>
+        </div>
+        <div className="flex items-center gap-2 mx-5">
+          <FaRegCircleUser className="w-4 h-4 text-cyan-400" />
+          <p className="text-gray-400 italic">Manojkumar</p>
+        </div>
       </div>
-    
 
-      {/* Right side: Empty for now */}
-      <div>
-          <div className="flex items-center gap-4 mx-20 ">
-        <a href="https://www.instagram.com/im_manoj_06/" target="_blank" rel="noopener noreferrer">
+      {/* Right: Social Links */}
+      <div className="flex items-center gap-4 mt-6 md:mt-0">
+        <a
+          href="https://www.instagram.com/im_manoj_06/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram className="h-5 w-5 hover:text-pink-400" />
         </a>
-       <a href="mailto:kandhulamanojkumar663@gmail.com"  aria-label="Send Email"  title="Send Email" className="inline-flex items-center">
-         <EnvelopeIcon className="h-5 w-5 text-gray-400 hover:text-blue-300  " />
+        <a
+          href="mailto:kandhulamanojkumar663@gmail.com"
+          aria-label="Send Email"
+          title="Send Email"
+          className="inline-flex items-center"
+        >
+          <EnvelopeIcon className="h-5 w-5 text-gray-400 hover:text-blue-300" />
         </a>
-
-        <a href="https://github.com/manojcoders" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/manojcoders"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub className="h-5 w-5 hover:text-gray-400" />
         </a>
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="h-5 w-5 hover:text-blue-300" />
         </a>
-        <a href="tel:+91 9491779518">
-          <PhoneIcon className="h-5 w-5 hover:text-green-400" />
-        </a>
-      </div>
       </div>
     </div>
   );
-}
+};
 
 export default Footer;
-

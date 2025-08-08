@@ -12,7 +12,7 @@ const ScrollRunner = () => {
       const progress = scrollTop / docHeight;
 
       setScrollProgress(progress);
-      setShowRunner(progress > 0.6); // Change to runner at 60%
+      setShowRunner(progress > 0.9); // Change to runner at 60%
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -54,7 +54,7 @@ const ScrollRunner = () => {
                 x: positionX,
               }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 1.0 }}
             >
               🏃‍♂️
             </motion.div>

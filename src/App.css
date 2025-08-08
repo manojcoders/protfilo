@@ -102,22 +102,22 @@ html {
   perspective: 800px;
 }
 
-.flip {
-  transform: rotateX(180deg);
-}
- 
 @keyframes flip-clean {
   0% {
     transform: rotateX(90deg);
     opacity: 0;
   }
-  30% {
+  25% {
+    transform: rotateX(45deg);
+    opacity: 0.5;
+  }
+  50% {
     transform: rotateX(0deg);
     opacity: 1;
   }
-  70% {
-    transform: rotateX(0deg);
-    opacity: 1;
+  75% {
+    transform: rotateX(-45deg);
+    opacity: 0.5;
   }
   100% {
     transform: rotateX(-90deg);
@@ -126,11 +126,14 @@ html {
 }
 
 .animate-flip-clean {
-  animation: flip-clean 2.7s ease-in-out;
+  animation: flip-clean 1.2s ease-in-out;
   display: inline-block;
   transform-origin: center;
   will-change: transform, opacity;
 }
+
+
+
 
 /* App.css or index.css */
 /* Hide scrollbar by default */
