@@ -102,9 +102,9 @@ const Home = () => {
 
 
                 <p className="text-white/70 text-base md:text-md mb-4 leading-relaxed">
-                  I’m a full-stack web developer who builds responsive and scalable applications.
-                  I specialize in React for the frontend and Node.js for backend development.
-                  I also craft modern UIs using Tailwind CSS and follow clean coding practices.
+                  `I’m a full-stack web developer who builds responsive and scalable applications.
+                    I specialize in JavaScript, React for the frontend, and Node.js for backend development.
+                    With Tailwind CSS, I bring modern UI ideas to life and keep my codebase clean and efficient`.
                 </p>
                 <button
                   onClick={() => window.open('https://manoj-resume.vercel.app/', '_blank')}
@@ -264,7 +264,7 @@ const Home = () => {
                   <img src={Frentend} alt="Frontend Developer" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-4">
                     <h3 className="text-xl font-semibold text-white mb-2">Frontend Developer</h3>
-                    <p className="text-white text-center">Specialized in React, Tailwind, and UI/UX designs for modern web apps.</p>
+                    <p className="text-white text-center">Specialized in React, Tailwind,Frameworks and UI/UX designs for modern web apps.</p>
                   </div>
                 </div>
 
@@ -273,7 +273,7 @@ const Home = () => {
                   <img src={Backend} alt="Backend Developer" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-4">
                     <h3 className="text-xl font-semibold text-white mb-2">Backend Developer</h3>
-                    <p className="text-white text-center">Expert in Node.js, Laravel, RESTful APIs, and database design.</p>
+                    <p className="text-white text-center">Expert in Node.js, Laravel, RESTful APIs,Php and database design.</p>
                   </div>
                 </div>
 
@@ -282,7 +282,7 @@ const Home = () => {
                   <img src={Fullstack} alt="Full Stack Developer" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-4">
                     <h3 className="text-xl font-semibold text-white mb-2">Full Stack Developer</h3>
-                    <p className="text-white text-center">Builds full applications using React, Node.js, APIs, and MySQL.</p>
+                    <p className="text-white text-center">Builds full applications using React, Node.js, APIs, and MySQL, MongoDB.</p>
                   </div>
                 </div>
 
