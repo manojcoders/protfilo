@@ -68,7 +68,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
             className="text-2xl focus:outline-none"
           >
-            ✖
+           ➡
           </button>
         </div>
 
