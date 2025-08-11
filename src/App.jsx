@@ -332,7 +332,7 @@ const Home = () => {
             <div className="w-full max-w-7xl mx-auto mt-20 px-6 md:px-0 flex justify-center">
               <div className="rounded-xl p-6 w-full max-w-md text-center shadow-lg">
                 <h3 className="text-2xl font-semibold text-white font-serif">
-                  Rajah RSRK Rangara College
+                  Rajah RSRK Ranga Rao College
                 </h3>
                 <p className="text-gray-400 mt-2 font-serif">
                   Mathematics, Statistics, Computer Applications(B.s.c)
