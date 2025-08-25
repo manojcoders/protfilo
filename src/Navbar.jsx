@@ -63,13 +63,14 @@ const Navbar = () => {
         }`}
       >
         {/* Close Button */}
-       <div className="flex justify-end p-4 sm:hidden">
+       <div className="flex justify-end p-4 ">
         <button
           onClick={() => setMenuOpen(false)}
           className="text-2xl focus:outline-none"
         >
           ➡
         </button>
+         
         </div>
 
         {/* Mobile Nav Links (With Icons) */}
@@ -93,4 +94,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
