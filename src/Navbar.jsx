@@ -66,7 +66,7 @@ const Navbar = () => {
        <div className="flex justify-end p-4 ">
         <button
           onClick={() => setMenuOpen(false)}
-          className="text-2xl focus:outline-none"
+          className="text-2xl focus:outline-none sm:hidden"
         >
           ➡
         </button>
@@ -94,5 +94,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
