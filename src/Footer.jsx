@@ -4,7 +4,8 @@ import { FaInstagram, FaGithub, FaTwitter } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { MdOutlineContactMail } from "react-icons/md";
-
+import ViewCounter from "./viewcounter";
+import { AiOutlineGlobal } from "react-icons/ai";
 const Footer = () => {
   return (
     <div
@@ -29,8 +30,11 @@ const Footer = () => {
           <FaRegCircleUser className="w-4 h-4 text-cyan-400" />
           <p className="text-gray-400 italic">Manojkumar</p>
         </div>
+        <div className="flex items-center gap-2 mx-5">
+          <AiOutlineGlobal className="w-4 h-4 text-cyan-400"  />
+          <ViewCounter />
       </div>
-
+      </div>
       {/* Right: Social Links */}
       <div className="flex items-center gap-4 mt-6 md:mt-0">
         <a
@@ -58,6 +62,7 @@ const Footer = () => {
         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="h-5 w-5 hover:text-blue-300" />
         </a>
+      
       </div>
     </div>
   );
