@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 mx-5">
           <AiOutlineGlobal className="w-4 h-4 text-cyan-400"  />
-          <ViewCounter />
+            <p className="text-gray-400 italic"><ViewCounter /></p>
       </div>
       </div>
       {/* Right: Social Links */}
