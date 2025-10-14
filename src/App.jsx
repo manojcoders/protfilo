@@ -368,7 +368,7 @@ const Home = () => {
                   Regular Employee
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
-                  <p className="text-gray-400">January (2025)– July (2025) -Present</p>
+                  <p className="text-gray-400">January (2025)-Present</p>
                   <p className="mt-2 text-green-300 font-medium">VulcanTechs (Goprayan)</p>
                   <p className="mt-4">
                     <strong>Project:</strong> Ford Company (assisting in Ford projects) – React projects
