@@ -176,7 +176,7 @@ const Home = () => {
             <div className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 md:p-10 shadow-xl">
               <h3 className="text-white text-md font-semibold mb-4">Skill Set</h3>
               <div className="flex flex-wrap gap-3">
-                {["HTML", "Tailwind", "ReactJS", "Node.js", "MongoDB", "MySQL", "Spfx", "PHP", "CSS",].map((skill) => (
+                {["HTML", "Tailwind", "ReactJS", "Node.js", "MongoDB", "MySQL", "Spfx", "PHP", "CSS", "AWS","Vpc", "Ec2" ,"S3"].map((skill) => (
                   <span
                     key={skill}
                     className="text-white text-xs md:text-sm px-4 py-1.5 rounded-full bg-white/10 border border-white/20 hover:bg-white/20 transition"
@@ -281,7 +281,7 @@ const Home = () => {
                 <div className="relative group w-full md:w-1/3 h-72 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg">
                   <img src={Fullstack} alt="Full Stack Developer" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col justify-center items-center p-4">
-                    <h3 className="text-xl font-semibold text-white mb-2">Full Stack Developer</h3>
+                    <h3 className="text-xl font-semibold text-white mb-2">Full Stack Developer Aws(Deployment)</h3>
                     <p className="text-white text-center font-serif ">Builds full applications using React, Node.js, APIs, and MySQL, MongoDB.</p>
                   </div>
                 </div>
@@ -317,11 +317,13 @@ const Home = () => {
 
                 {/* Card 3 - Testing: ReferNext & HRMS */}
                 <div className="group w-full md:w-1/3 min-h-[300px] p-6 rounded-2xl bg-white/10 backdrop-blur-lg border border-white/20 shadow-lg transition-transform duration-300">
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">Testing: ReferNext & HRMS</h3>
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">Qutone Ceramic (AWS Deployment)</h3>
                   <p className="text-white/90 text-sm leading-relaxed max-h-40 overflow-y-auto scrollbar-thin font-serif ">
-                    Worked on manual and functional testing for ReferNext and HRMS modules.
-                    Created and executed test cases, reported bugs, and collaborated with developers for faster issue resolution.
-                    Ensured accurate data flow, tested login roles, and finalized pre-release quality checks.
+                   Deployed the backend application on AWS EC2 and connected using PuTTY through the private IP via SSM/Session Manager.
+                    Configured secure server access without exposing public IPs, improving security and isolation inside the VPC.
+                     Set up Node.js backend, Nginx, and required services on EC2 using SSH access through PuTTY.
+                     Integrated S3 buckets for storing static files and optimized bucket access policies.
+                    Managed VPC, subnets, IAM roles, and security groups to ensure secure and scalable application deployment.
                   </p>
                 </div>
 
@@ -348,10 +350,10 @@ const Home = () => {
 
             <div className="w-full max-w-7xl mx-auto mt-20 px-6 md:px-0 flex flex-col md:flex-row items-center justify-center gap-10">
 
-              {/* Internship Card */}
+              {/* Intern Card */}
               <div className="group border border-gray-700 rounded-xl p-6 w-full max-w-md text-center shadow-lg h-[200px] flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">
-                  Internship
+                  Intern
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
                   <p className="text-gray-400">June (2024) – December (2024) (7 months)</p>
