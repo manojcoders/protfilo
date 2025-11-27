@@ -378,6 +378,9 @@ const Home = () => {
                   <p className="mt-2">
                     H360 Project (March – July), testing and development.
                   </p>
+                  <p className="mt-2">
+                    <strong>Project</strong>Qutone: (Oct–Nov) Managed end-to-end AWS infrastructure setup and application deployment
+                  </p>
                 </div>
               </div>
 
