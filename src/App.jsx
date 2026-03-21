@@ -353,10 +353,10 @@ const Home = () => {
               {/* Intern Card */}
               <div className="group border border-gray-700 rounded-xl p-6 w-full max-w-md text-center shadow-lg h-[200px] flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">
-                  Intern
+                  Freelance
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
-                  <p className="text-gray-400">June (2024) – December (2024) (7 months)</p>
+                  <p className="text-gray-400">June (2024) – Out (2024) (5 months)</p>
                   <p className="mt-2 text-green-300 font-medium">VulcanTechs (Goprayan)</p>
                   <p className="mt-4">
                     Worked on web development using HTML, CSS, PHP, MySQL, and JavaScript.
@@ -370,7 +370,7 @@ const Home = () => {
                   Regular Employee
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
-                  <p className="text-gray-400">January (2025)-Present</p>
+                  <p className="text-gray-400">Out (2025)- Feb(2026)</p>
                   <p className="mt-2 text-green-300 font-medium">VulcanTechs (Goprayan)</p>
                   <p className="mt-4">
                     <strong>Project:</strong> Ford Company (assisting in Ford projects) – React projects
@@ -380,6 +380,9 @@ const Home = () => {
                   </p>
                   <p className="mt-2">
                     <strong>Project</strong>Qutone: (Oct–Nov) Managed end-to-end AWS infrastructure setup and application deployment
+                  </p>
+                  <p className="mt-2">
+                   <strong>Project </strong>Bistro Bill: (Dec-Feb) A web application built using React and Angular for efficient user interaction
                   </p>
                 </div>
               </div>
