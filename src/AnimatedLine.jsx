@@ -29,15 +29,14 @@ const ScrollRunner = () => {
         {/* Ball moving */}
         <AnimatePresence>
           {!showRunner && (
-            <motion.div
-              key="ball"
-              className="absolute -top-4 w-4 h-4 bg-white rounded-full shadow-md"
-              animate={{ x: positionX }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, x: positionX }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1.4 }}
-            />
+         <motion.div
+                  key="ball"
+                  className="absolute -top-4 w-4 h-4 bg-white rounded-full shadow-md"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, x: positionX }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 1.4 }}
+                />
           )}
         </AnimatePresence>
 
