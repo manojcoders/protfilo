@@ -102,9 +102,15 @@ const Home = () => {
 
 
                 <p className="text-white/70 text-base md:text-md mb-4 leading-relaxed font-serif ">
-                  Im a full-stack web developer who builds responsive and scalable applications.
-                  I specialize in JavaScript, React for the frontend, and Node.js for backend development.
-                  With Tailwind CSS, I bring modern UI ideas to life and keep my codebase clean and efficient`.
+                 I’m a Full-Stack Developer with 1.5+ years of hands-on experience building responsive,
+                  scalable, and user-friendly web applications. I specialize in JavaScript,
+                  React.js, Node.js, Express.js, REST APIs, SQL, and MongoDB, 
+                  with experience creating modern interfaces using Tailwind CSS.
+                  I focus on writing clean, maintainable code, developing efficient backend services, 
+                  and delivering reliable end-to-end web solutions. 
+                  I’m currently looking for an opportunity where I can contribute to real-world projects, 
+                  strengthen my technical expertise, and grow as a Full-Stack Developer.
+
                 </p>
                 <button
                   onClick={() => window.open('https://manoj-resume.vercel.app/', '_blank')}
@@ -353,7 +359,7 @@ const Home = () => {
               {/* Intern Card */}
               <div className="group border border-gray-700 rounded-xl p-6 w-full max-w-md text-center shadow-lg h-[200px] flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">
-                  Freelance
+                  Junior Software Developer
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
                   <p className="text-gray-400">June (2024) – Out (2024) (5 months)</p>
@@ -367,7 +373,7 @@ const Home = () => {
               {/* Regular Employment Card */}
               <div className="group border border-gray-700 rounded-xl p-6 w-full max-w-md text-center shadow-lg h-[200px] flex flex-col">
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:scale-105 transition-transform duration-300">
-                  Regular Employee
+                  Full Stack Developer(Mernstack)
                 </h3>
                 <div className="text-gray-300 text-sm leading-relaxed overflow-y-auto font-serif transition-all duration-300 scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-transparent flex-1">
                   <p className="text-gray-400">Out (2025)- Feb(2026)</p>
