@@ -74,7 +74,7 @@ const Home = () => {
     };
   }, [hours, minutes, roles.length]);
 
-  const lineWidth = 600;
+  // const lineWidth = 600;
 
   return (
     <>
